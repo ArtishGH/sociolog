@@ -6,7 +6,7 @@ export const LandingView = () => {
     return (
         <div className="landing-container">
             <header className="landing-header">
-                <div className="header-content">
+                <div className="header-content"> // sigma
                     <h1 className="header-title">Let us help you</h1>
                     <p className="header-motto">Laughter is the best medicine</p>
                 </div>
