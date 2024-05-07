@@ -1,11 +1,10 @@
-import { LandingView } from "../../components/landing/LandingView/landingView";
+import { LandingView } from "../../components/landing/LandingView";
 
 export function LandingPage() {
     return (
-    <div>
-        <h1>Welcome to the Home Page</h1>
-        <p>This is the landing page of our site.</p>
-        <LandingView />
-    </div>
+        <div className="full">
+            <LandingView />
+        </div>
+        
     );
 }
