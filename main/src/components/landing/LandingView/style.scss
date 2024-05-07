@@ -1,29 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lalezar&family=Sriracha&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lalezar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap");
 
-
-header {
-  background: rgb(32, 105, 117);
-  background: linear-gradient(
-    160deg,
-    rgba(32, 105, 117, 1) 0%,
-    rgba(104, 130, 160, 1) 31%,
-    rgba(205, 224, 201, 1) 54%,
-    rgba(237, 236, 222, 1) 76%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  font-family: "Poppins";
-  font-size: 2em;
-}
-
-.landing-container {
+.view {
   font-family: "Poppins";
   box-sizing: border-box;
 }
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   background-image: url(../../../../public/img/greenWaves.jpg);
   background-size: cover;
@@ -32,8 +17,8 @@ header {
   color: white;
 }
 
-.header-content {
-  margin-bottom: 50px;
+.left-bar {
+  margin-bottom: 0px;
   margin-left: 125px;
 }
 
@@ -61,6 +46,7 @@ header {
   max-width: 330px;
   height: auto;
   border-radius: 10px;
+  margin-top: 50px;
 }
 
 @media (min-width: 768px) {
@@ -78,5 +64,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .right-bar img {
+    max-width: 300px;
   }
 }
