@@ -4,28 +4,38 @@ body {
   padding: 0;
   background-color: #f2f2f2;
 }
-
+.app {
+  display: flex;
+  justify-content: center; /* Center the navbar horizontally */
+}
 .app .navbar {
-  height: 40px;
+  justify-content: center;
+  margin-top: 40px;
+  background-color: rgba(238, 220, 190, 0.2);
+  border-radius: 15px;
+  opacity: 25%;
+  height: 60px;
   position: fixed; /* Fix the navbar to the top of the viewport */
-  width: 100%; /* Make the navbar span the entire width of the viewport */
+  width: 80%; /* Make the navbar span the entire width of the viewport */
   z-index: 1000; /* Ensure the navbar is stacked above other content */
 }
 
 .app nav {
   border-radius: 0;
-  background-color: #edecde; /* Set the background color of the navbar */
+  opacity: 70%;
   display: flex;
+  align-items: center;
 }
 
 /* Additional styles as before */
 
 .app nav ul {
-  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0px;
   display: flex;
   text-align: center;
-  width: 80%;
+  width: 100%;
 }
 
 .app nav ul li:first-child {
@@ -33,13 +43,18 @@ body {
 }
 
 .app nav li {
+  margin-top: 10px;
   text-align: center;
-  margin: 10px;
+  padding: 5px;
   list-style: none;
   color: #206975;
 }
 
 .app nav li a {
-  color: #206975;
+  opacity: 1;
+  color: black;
+  font-family: "Poppins";
+  font-weight: bolder;
   text-decoration: none;
+  font-size: x-large;
 }
