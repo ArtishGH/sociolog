@@ -4,17 +4,20 @@ body {
   padding: 0;
   background-color: #f2f2f2;
 }
-.app {
+
+.smaller-app {
   display: flex;
-  justify-content: center; /* Center the navbar horizontally */
+  justify-content: center;
 }
-.app .navbar {
+
+.navbar {
+  display: flex;
   justify-content: center;
   margin-top: 40px;
   background-color: rgba(238, 220, 190, 0.2);
   border-radius: 15px;
   opacity: 25%;
-  height: 60px;
+  height: 80px;
   position: fixed; /* Fix the navbar to the top of the viewport */
   width: 80%; /* Make the navbar span the entire width of the viewport */
   z-index: 1000; /* Ensure the navbar is stacked above other content */
@@ -43,9 +46,11 @@ body {
 }
 
 .app nav li {
+  padding: 20px;
+  font-size: 35px;
   margin-top: 10px;
   text-align: center;
-  padding: 5px;
+  font-style: italic;
   list-style: none;
   color: #206975;
 }
