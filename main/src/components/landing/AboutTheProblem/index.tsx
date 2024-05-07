@@ -2,7 +2,7 @@ import "./style.scss";
 
 const About = () => {
   return (
-    <div>
+    <div className="about">
       <div className="problem">
         <div className="description">
           <h6>title</h6>

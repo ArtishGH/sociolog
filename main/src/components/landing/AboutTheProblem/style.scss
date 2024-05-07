@@ -5,6 +5,37 @@ body {
 .problem {
   background-color: #6882a0;
   display: flex;
-  width: 400px;
   justify-content: center;
+  .about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .description {
+    flex-basis: calc(33.33% - 20px); /* Adjust width of each item */
+    margin-bottom: 20px; /* Adjust spacing between items */
+  }
+
+  /* Optionally, you can add styles for the title and paragraph */
+  .description h6 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .description p {
+    margin: 0;
+  }
+
+  flex-basis: auto;
+  width: calc(33.3% - 20px);
+  margin: 20px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about {
+  display: flex;
+  flex-direction: column;
 }
