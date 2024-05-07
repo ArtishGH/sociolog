@@ -1,4 +1,4 @@
-import { LandingView } from "../../components/landing/landingView";
+import { LandingView } from "../../components/landing/LandingView/landingView";
 
 export function LandingPage() {
     return (
