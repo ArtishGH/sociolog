@@ -2,30 +2,30 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4ee;
+  background-color: #f2f2f2;
 }
 
 .app .navbar {
   height: 40px;
+  position: fixed; /* Fix the navbar to the top of the viewport */
+  width: 100%; /* Make the navbar span the entire width of the viewport */
+  z-index: 1000; /* Ensure the navbar is stacked above other content */
 }
 
 .app nav {
-  border-radius: 45px;
-  //opacity: 40%;
-  border: solid 1px #206975;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  background-color: #edecde;
+  border-radius: 0;
+  background-color: #edecde; /* Set the background color of the navbar */
   display: flex;
 }
+
+/* Additional styles as before */
 
 .app nav ul {
   text-align: right;
   margin-top: 0px;
   display: flex;
   text-align: center;
+  width: 80%;
 }
 
 .app nav ul li:first-child {
