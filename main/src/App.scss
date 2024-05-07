@@ -1,0 +1,45 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4ee;
+}
+
+.app .navbar {
+  height: 40px;
+}
+
+.app nav {
+  border-radius: 45px;
+  //opacity: 40%;
+  border: solid 1px #206975;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  background-color: #edecde;
+  display: flex;
+}
+
+.app nav ul {
+  text-align: right;
+  margin-top: 0px;
+  display: flex;
+  text-align: center;
+}
+
+.app nav ul li:first-child {
+  text-decoration: underline;
+}
+
+.app nav li {
+  text-align: center;
+  margin: 10px;
+  list-style: none;
+  color: #206975;
+}
+
+.app nav li a {
+  color: #206975;
+  text-decoration: none;
+}
