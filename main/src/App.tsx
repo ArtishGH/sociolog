@@ -1,17 +1,21 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-import { LandingPage } from './pages/Landing/Landing.tsx';
-import { FormPage } from './pages/Form/Form.tsx';
-import './App.css';
+import { LandingPage } from "./pages/Landing/Landing.tsx";
+import { FormPage } from "./pages/Form/Form.tsx";
+import "./App.scss";
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <nav>
+      <div className="app">
+        <nav className="navbar">
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/form">Form</Link></li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/form">Form</Link>
+            </li>
           </ul>
         </nav>
 
