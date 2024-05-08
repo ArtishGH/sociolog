@@ -12,6 +12,11 @@ app.use(cors());
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true }));
 
+app.get("/posts", async (req, res) => {
+  const posts = await getPosts();
+  res.status(200).json(posts);
+});
+
 const server = app.listen(8080, () => console.log("Server is listening on port 8080"));
 const wss = new WebSocketServer({ server });
 
@@ -31,8 +36,6 @@ wss.on("connection", async (ws) => {
       default:
         break;
     }
-    wss.clients.forEach(
-      (client) => client !== ws && client.readyState === ws.OPEN && client.send(JSON.stringify(getPosts()))
-    );
+    wss.clients.forEach((client) => client.send(JSON.stringify(getPosts())));
   });
 });
