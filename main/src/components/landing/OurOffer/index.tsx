@@ -13,6 +13,13 @@ const OurOffer = () => {
           possible.
         </p>
       </div>
+      {/* arrow zrobiony aboslute */}
+      <img
+        className="arrow"
+        src="../../../../public/img/Vector6.png"
+        alt="dziwka"
+      />
+      <img className="business" src="../../../../public/img/business.png" />
       <div className="offer-points-second">
         <h3>Tracking your buisness progress</h3>
         <p>
@@ -21,6 +28,12 @@ const OurOffer = () => {
           get your company on the next level
         </p>
       </div>
+      {/* arrow zrobiony aboslute */}
+      <img
+        className="arrow2"
+        src="../../../../public/img/Vector6.png"
+        alt="dziwka"
+      />
       <div className="offer-points-third">
         <h3>Data about parents and children</h3>
         <p>

@@ -11,7 +11,7 @@ const About = () => {
           <div className="description">
             <img
               className="img-third"
-              src="../../../../../public/img/zdjecie3.png"
+              src="../../../../public/img/zdjecie3.png"
             />
             <div className="info">
               <h4>Lorem ipsum</h4>
@@ -23,6 +23,7 @@ const About = () => {
               </p>
             </div>
           </div>
+
           <div className="description">
             <img
               className="img-second"

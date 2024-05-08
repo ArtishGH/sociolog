@@ -3,14 +3,15 @@ body {
   padding: 0;
 }
 .offer {
-  background-color: white;
+  margin-top: 9%;
+  background-color: #7ea07b;
   .title {
     h1 {
       margin-left: 20px;
       font-size: 3rem;
       font-weight: bolder;
       color: #3e513d;
-      border-bottom: solid 3px #3e513d;
+      border-bottom: solid 3px #9cc29b;
       width: 40%;
     }
   }
@@ -41,4 +42,18 @@ body {
     margin-left: 15%;
     text-align: center;
   }
+}
+.arrow {
+  position: absolute;
+  margin-left: 34%;
+}
+.arrow2 {
+  position: absolute;
+  margin-left: 40%;
+  margin-top: -10%;
+  transform: rotate(90deg);
+}
+.business {
+  margin-left: 60%;
+  margin-top: -20%;
 }

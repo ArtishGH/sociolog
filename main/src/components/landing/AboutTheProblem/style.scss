@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 .about {
-  margin-top: 20%;
+  margin-top: 24%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -76,4 +76,7 @@ body {
 .img-third {
   max-width: 150px;
   max-height: 150px;
+}
+.arrow {
+  position: absolute;
 }
