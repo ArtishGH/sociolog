@@ -1,75 +1,85 @@
 import "./Chat.scss";
 import { FaRegComments } from "react-icons/fa";
 import { TbSend2 } from "react-icons/tb";
+import WebSocket from "ws";
+import React, { useEffect, useState } from "react";
 
-const posts = [
-  {
-    id: 1,
-    content: "Hello, World!",
-    comments: [
-      { id: 1, content: "Hello, Bob!" },
-      { id: 2, content: "Hi, Alice!" },
-      { id: 3, content: "How are you?" },
-      { id: 4, content: "I am fine, thank you!" },
-      { id: 5, content: "Good to hear that!" },
-    ],
-    date: new Date(),
-  },
-  {
-    id: 2,
-    content: "Hello, World!",
-    comments: [
-      { id: 1, content: "Hello, Alice!" },
-      { id: 2, content: "Hi, Bob!" },
-      { id: 3, content: "How are you?" },
-      { id: 4, content: "I am fine, thank you!" },
-      { id: 5, content: "Good to hear that!" },
-    ],
-    date: new Date(),
-  },
-  {
-    id: 3,
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    comments: [],
-    date: new Date(),
-  },
-];
+const ws = new WebSocket("ws://localhost:8080");
+
+interface Comment {
+  id: number;
+  content: string;
+  date: Date;
+}
+
+interface Post {
+  id: number;
+  content: string;
+  comments: Comment[];
+  date: Date;
+}
+
+ws.on("open", (ws: any) => {
+  console.log("Connected to server");
+  console.log(ws);
+});
 
 export function Chat() {
+  const [posts, setPosts] = useState<Post[]>([]);
+
+  useEffect(() => {
+    ws.on("message", (data: any) => {
+      console.log(data);
+      setPosts(data);
+    });
+  }, []);
+
+  const submitForm = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const form = e.target as HTMLFormElement;
+    const input = form.querySelector("input") as HTMLInputElement;
+    const content = input.value;
+
+    if (content.length === 0) return;
+
+    ws.send({ type: "ADD_POST", content: content });
+  };
+
   return (
     <div className="chat">
       <h1>Post & reply</h1>
       <div className="chat-container">
-        <form>
-          <input placeholder="What's up? Any problem?" type="text" />
+        <form onSubmit={submitForm}>
+          <input placeholder="What's up? Any problem?" type="text" required />
           <button>
             Send
             <TbSend2 />
           </button>
         </form>
         <div className="posts">
-          {posts.map((post) => {
-            return (
-              <div className="post">
-                <p>{post.content}</p>
-                <div className="post-footer">
-                  <span>
-                    {post.date.getHours()}:{post.date.getMinutes()}
-                  </span>
-                  <span className="dot" />
-                  <span>
-                    {post.date.getDay()}/{post.date.getMonth()}/{post.date.getFullYear()}
-                  </span>
-                  <span className="dot" />
-                  <span>
-                    <FaRegComments />
-                    {post.comments.length}
-                  </span>
+          {posts.length > 0 &&
+            posts.map((post) => {
+              return (
+                <div className="post" key={post.id}>
+                  <p>{post.content}</p>
+                  <div className="post-footer">
+                    <span>
+                      {post.date.getHours()}:{post.date.getMinutes()}
+                    </span>
+                    <span className="dot" />
+                    <span>
+                      {post.date.getDay()}/{post.date.getMonth()}/{post.date.getFullYear()}
+                    </span>
+                    <span className="dot" />
+                    <span>
+                      <FaRegComments />
+                      {post.comments.length}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
         </div>
       </div>
     </div>
