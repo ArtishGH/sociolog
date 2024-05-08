@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { Statistics } from "./pages/Statistics/Statistics.tsx";
 import { LandingPage } from "./pages/Landing/Landing.tsx";
 import { FormPage } from "./pages/Form/Form.tsx";
+import { Chat } from "./pages/Chat/Chat.tsx";
 import "./App.scss";
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
           <Route path="/" element={<LandingPage />} />
           <Route path="/form" element={<FormPage />} />
           <Route path="/statistics" element={<Statistics />} />
+          <Route path="/chat" element={<Chat />} />
         </Routes>
       </div>
     </BrowserRouter>
