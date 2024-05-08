@@ -71,11 +71,24 @@
   margin-right: auto;
   color: #3e513d;
   padding: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   border: 1px solid #3e513d;
   background: none;
   border-radius: 10px;
   font-style: italic;
   font-weight: 600;
   cursor: pointer;
+}
+
+.answer {
+  width: 95%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #3e513d;
+  color: white;
+
+  p {
+    margin: 0;
+  }
 }

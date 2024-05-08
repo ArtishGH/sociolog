@@ -31,9 +31,8 @@ export function Chat() {
 
   useEffect(() => {
     const getPosts = async () => {
-      const response = await axios.get("http://localhost:8080/posts");
+      const response = await axios.get("http://localhost:8080/api/posts");
       const data = response.data;
-      console.log(data);
       setPosts(data);
     };
     getPosts();

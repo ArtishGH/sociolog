@@ -1,7 +1,9 @@
 import "./style.scss";
 import { useState } from "react";
+import axios from "axios";
 
 const Form = () => {
+  const [answer, setAnswer] = useState<string>("");
   const [selectedOptions, setSelectedOptions] = useState<{
     [key: string]: string;
   }>({
@@ -13,21 +15,29 @@ const Form = () => {
     container6: "",
   });
 
-  const handleOptionChange =
-    (containerId: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
-      const value = e.target.value;
-      setSelectedOptions((prevState) => ({
-        ...prevState,
-        [containerId]: value,
-      }));
-    };
+  const handleOptionChange = (containerId: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSelectedOptions((prevState) => ({
+      ...prevState,
+      [containerId]: value,
+    }));
+  };
+
+  const submit = () => {
+    axios
+      .post("/api/form", { selectedOptions })
+      .then((res) => {
+        setAnswer(res.data.message);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
     <div className="container-form">
       <div className="title">
-        <h1>
-          Answer these questions to know how close is your relation with your
-          son
-        </h1>
+        <h1>Answer these questions to know how close is your relation with your son</h1>
         <img className="relation-image" src="../../../public/img/relacja.png" />
       </div>
       <div className="questions">
@@ -248,7 +258,14 @@ const Form = () => {
           </div>
         </div>
       </div>
-      <button className="submit">Submit your answers</button>
+      <button className="submit" onClick={() => submit()}>
+        Submit your answers
+      </button>
+      {answer.length > 0 && (
+        <div className="answer">
+          <p>{answer}</p>
+        </div>
+      )}
     </div>
   );
 };
