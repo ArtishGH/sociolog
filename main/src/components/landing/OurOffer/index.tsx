@@ -42,6 +42,11 @@ const OurOffer = () => {
           dealing with etc.
         </p>
       </div>
+      <img
+        className="arrow3"
+        src="../../../../public/img/Vector6.png"
+        alt="dziwka"
+      />
       <div className="space">
         <button>See more</button>
       </div>

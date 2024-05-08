@@ -26,9 +26,6 @@ const App = () => {
                   <Link to="/">Statistics</Link>
                 </li>
                 <li>
-                  <Link to="/chat">Mission</Link>
-                </li>
-                <li>
                   <Link to="/parents">Parents</Link>
                 </li>
               </ul>

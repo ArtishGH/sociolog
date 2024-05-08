@@ -53,6 +53,11 @@ body {
   margin-top: -10%;
   transform: rotate(90deg);
 }
+.arrow3 {
+  position: absolute;
+  margin-left: 37%;
+  margin-top: -12%;
+}
 .business {
   margin-left: 60%;
   margin-top: -20%;
@@ -67,13 +72,14 @@ body {
     padding: 20px;
     margin-left: 50%;
     color: white;
-    margin-top: -100px;
     width: 180px;
     font-size: 1.2rem;
     font-weight: 600;
     font-family: "Poppins";
-    transition: 0.8s;
+    transition: 1s;
     cursor: pointer;
+    margin-bottom: 100px;
+    margin-top: -50px;
   }
   button:hover {
     background-color: white;
