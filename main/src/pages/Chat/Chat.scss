@@ -1,14 +1,17 @@
 .chat {
+  margin-top: -45px;
   font-family: sans-serif;
   background: #80a27f;
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
 
   h1 {
+    padding-top: 150px;
     font-size: 60px;
     text-align: center;
     font-weight: 900;
     color: #eaf6ea;
+    padding-bottom: 20px;
   }
 
   &-container {
