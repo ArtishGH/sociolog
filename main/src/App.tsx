@@ -26,6 +26,9 @@ const App = () => {
                 <li>
                   <Link to="/parents">Parents</Link>
                 </li>
+                <li>
+                  <Link to="/chat">Chat</Link>
+                </li>
               </ul>
             </nav>
           </div>
