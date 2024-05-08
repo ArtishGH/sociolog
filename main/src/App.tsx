@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import { LandingPage } from "./pages/Landing/Landing.tsx";
 import { FormPage } from "./pages/Form/Form.tsx";
+import { Chat } from "./pages/Chat/Chat.tsx";
 import "./App.scss";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/form" element={<FormPage />} />
+          <Route path="/chat" element={<Chat />} />
         </Routes>
       </div>
     </BrowserRouter>
