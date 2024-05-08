@@ -1,8 +1,9 @@
+import Form from "../../components/form/landingForm";
+
 export function FormPage() {
-    return (
+  return (
     <div>
-        <h1>Welcome to the Form Page</h1>
-        <p>This is the form page of our site.</p>
+      <Form />
     </div>
-    )
+  );
 }

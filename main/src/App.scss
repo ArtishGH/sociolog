@@ -11,21 +11,22 @@ body {
 }
 
 .navbar {
+  border: solid 3px #344233;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  background-color: rgba(238, 220, 190, 0.2);
+  margin-top: 20px;
+  background-color: rgba(238, 220, 190, 0.3);
   border-radius: 15px;
   opacity: 25%;
-  height: 80px;
+  height: 60px;
   position: fixed; /* Fix the navbar to the top of the viewport */
-  width: 80%; /* Make the navbar span the entire width of the viewport */
+  width: 50%; /* Make the navbar span the entire width of the viewport */
   z-index: 1000; /* Ensure the navbar is stacked above other content */
 }
 
 .app nav {
   border-radius: 0;
-  opacity: 70%;
+  opacity: 80%;
   display: flex;
   align-items: center;
 }
@@ -44,10 +45,12 @@ body {
 .app nav ul li:first-child {
   text-decoration: underline;
 }
+.app nav ul li:hover {
+}
 
 .app nav li {
-  padding: 20px;
-  font-size: 35px;
+  font-size: 18px;
+  padding: 10px;
   margin-top: 10px;
   text-align: center;
   font-style: italic;
@@ -61,5 +64,4 @@ body {
   font-family: "Poppins";
   font-weight: bolder;
   text-decoration: none;
-  font-size: x-large;
 }

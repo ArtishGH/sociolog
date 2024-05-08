@@ -35,12 +35,13 @@ body {
   height: 400px;
   text-align: center;
   background-color: #9cc29b;
-  flex-basis: calc(30.33% - 20px); /* Adjust width of each container */
+  flex-basis: calc(33.33% - 20px); /* Adjust width of each container */
   margin-bottom: 10px; /* Adjust spacing between containers */
 
   .info {
     margin-top: -35px;
     background-color: #bfddc1;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;

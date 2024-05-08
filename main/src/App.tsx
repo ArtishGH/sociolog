@@ -3,6 +3,7 @@ import { Statistics } from "./pages/Statistics/Statistics.tsx";
 import { LandingPage } from "./pages/Landing/Landing.tsx";
 import { FormPage } from "./pages/Form/Form.tsx";
 import { Chat } from "./pages/Chat/Chat.tsx";
+import { LandingViewParents } from "./components/landingParents/LandingViewParents/index.tsx";
 import "./App.scss";
 
 const App = () => {
@@ -23,10 +24,10 @@ const App = () => {
                   <Link to="/form">Form</Link>
                 </li>
                 <li>
-                  <Link to="/statistics">Statistics</Link>
-                </li> 
+                  <Link to="/">Statistics</Link>
+                </li>
                 <li>
-                  <Link to="/chat">Mission</Link>
+                  <Link to="/parents">Parents</Link>
                 </li>
               </ul>
             </nav>
@@ -38,10 +39,11 @@ const App = () => {
           <Route path="/form" element={<FormPage />} />
           <Route path="/statistics" element={<Statistics />} />
           <Route path="/chat" element={<Chat />} />
+          <Route path="/parents" element={<LandingViewParents />} />
         </Routes>
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

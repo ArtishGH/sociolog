@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.offer {
+  margin-top: 9%;
+  background-color: #7ea07b;
+  .title {
+    h1 {
+      margin-left: 20px;
+      font-size: 3rem;
+      font-weight: bolder;
+      color: #3e513d;
+      border-bottom: solid 3px #9cc29b;
+      width: 40%;
+    }
+  }
+  .offer-points-first {
+    max-width: 350px;
+    background-color: #9cc29b;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 5%;
+    margin-left: 15%;
+    text-align: center;
+  }
+  .offer-points-second {
+    max-width: 350px;
+    background-color: #9cc29b;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10%;
+    margin-left: 45%;
+    text-align: center;
+  }
+  .offer-points-third {
+    max-width: 350px;
+    background-color: #9cc29b;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 5%;
+    margin-left: 15%;
+    text-align: center;
+  }
+}
+.arrow {
+  position: absolute;
+  margin-left: 34%;
+}
+.arrow2 {
+  position: absolute;
+  margin-left: 40%;
+  margin-top: -10%;
+  transform: rotate(90deg);
+}
+.arrow3 {
+  position: absolute;
+  margin-left: 37%;
+  margin-top: -12%;
+}
+.business {
+  margin-left: 60%;
+  margin-top: -20%;
+}
+.space {
+  margin-top: 100px;
+  button {
+    border: #7ea07b 2px solid;
+    border-radius: 10px;
+    background-color: #3e513d;
+    border: none;
+    padding: 20px;
+    margin-left: 50%;
+    color: white;
+    width: 180px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Poppins";
+    transition: 1s;
+    cursor: pointer;
+    margin-bottom: 100px;
+    margin-top: -50px;
+  }
+  button:hover {
+    background-color: white;
+    color: #3e513d;
+  }
+}
