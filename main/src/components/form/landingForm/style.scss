@@ -78,4 +78,9 @@
   font-style: italic;
   font-weight: 600;
   cursor: pointer;
+  transition: 1s;
+}
+.submit:hover {
+  background-color: #3e513d;
+  color: white;
 }

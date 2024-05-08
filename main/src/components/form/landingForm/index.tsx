@@ -248,7 +248,9 @@ const Form = () => {
           </div>
         </div>
       </div>
-      <button className="submit">Submit your answers</button>
+      <button className="submit" type="submit">
+        Submit your answers
+      </button>
     </div>
   );
 };
