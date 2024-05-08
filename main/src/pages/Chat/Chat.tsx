@@ -68,32 +68,32 @@ export function Chat() {
           </button>
         </form>
         <div className="posts">
-        {posts.length > 0 &&
-          posts.map((post) => (
-            <div className="post" key={post.id}>
-              <p>{post.content}</p>
-              <div className="post-footer">
-                {post.date && (
-                  <>
-                    <span>{new Date(post.date).toLocaleTimeString()}</span>
-                    <span className="dot" />
-                    <span>{new Date(post.date).toLocaleDateString()}</span>
-                    <span className="dot" />
-                  </>
-                )}
-                <span>
-                  <FaRegComments />
-                  {post.comments.length}
-                </span>
-              </div>
-              {post.comments.map((comment) => (
-                <div className="comment" key={comment.id}>
-                  <span className="dot" />
-                  <p>- {comment.content}</p>
+          {posts.length > 0 &&
+            posts.map((post) => (
+              <div className="post" key={post.id}>
+                <p>{post.content}</p>
+                <div className="post-footer">
+                  {post.date && (
+                    <>
+                      <span>{new Date(post.date).toLocaleTimeString()}</span>
+                      <span className="dot" />
+                      <span>{new Date(post.date).toLocaleDateString()}</span>
+                      <span className="dot" />
+                    </>
+                  )}
+                  <span>
+                    <FaRegComments />
+                    {post.comments.length}
+                  </span>
                 </div>
-              ))}
-            </div>
-          ))}
+                {post.comments.map((comment) => (
+                  <div className="comment" key={comment.id}>
+                    <span className="dot" />
+                    <p>- {comment.content}</p>
+                  </div>
+                ))}
+              </div>
+            ))}
         </div>
       </div>
     </div>

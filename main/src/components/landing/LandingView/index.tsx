@@ -1,4 +1,3 @@
-import Mission from "../../landingParents/Mission";
 import About from "../AboutTheProblem";
 import Footer from "../Footer";
 import OurOffer from "../OurOffer";

@@ -18,16 +18,16 @@ const App = () => {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/">About Us</Link>
-                </li>
-                <li>
                   <Link to="/form">Form</Link>
                 </li>
                 <li>
-                  <Link to="/">Statistics</Link>
+                  <Link to="/statistics">Statistics</Link>
                 </li>
                 <li>
                   <Link to="/parents">Parents</Link>
+                </li>
+                <li>
+                  <Link to="/chat">Chat</Link>
                 </li>
               </ul>
             </nav>
