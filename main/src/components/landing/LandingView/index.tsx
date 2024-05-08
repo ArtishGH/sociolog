@@ -1,6 +1,7 @@
 import About from "../AboutTheProblem";
 import Footer from "../Footer";
 import OurOffer from "../OurOffer";
+import DataView from "../DataView/DataView";
 import "./style.scss";
 
 export const LandingView = () => {
@@ -16,6 +17,7 @@ export const LandingView = () => {
         </div>
       </div>
       <About />
+      <DataView />
       <OurOffer />
       <Footer />
     </div>
