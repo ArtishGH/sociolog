@@ -13,7 +13,7 @@ export const LandingViewParents = () => {
           <h4 className="header-motto">Understand your kid</h4>
         </div>
         <div className="right-bar">
-          <img src="../../../public/img/depressedGirl.png" alt="Laughter" />
+          <img src="../../../public/img/parents.png" alt="Laughter" />
         </div>
       </div>
       <About />

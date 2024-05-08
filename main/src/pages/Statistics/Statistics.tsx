@@ -21,7 +21,7 @@ export function Statistics() {
                             <img className='img' src="../../../../public/img/asperger.png" alt="" />
                             <div className='description'>
                                 <h2>Asperger</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur. Volutpat sodales ultricies hendrerit scelerisque est. Velit est euismod eget proin facilisis. Eu tempor viverra et pharetra commodo. Vivamus orci morbi lectus maecenas massa.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur. Volutpat sodales ultricies hendrerit scelerisque est. Velit est euismod eget proin facilisis</p>
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ export function Statistics() {
                             <img className='img' src="../../../../public/img/depresja.png" alt="" />
                             <div className='description'>
                                 <h2>Depresja</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur. Volutpat sodales ultricies hendrerit scelerisque est. Velit est euismod eget proin facilisis. Eu tempor viverra et pharetra commodo. Vivamus orci morbi lectus maecenas massa.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur. Volutpat sodales ultricies hendrerit scelerisque est. Velit est euismod eget proin facilisis</p>
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ export function Statistics() {
                             <img className='img' src="../../../../public/img/autyzm.png" alt="" />
                             <div className='description'>
                                 <h2>Autyzm</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur. Volutpat sodales ultricies hendrerit scelerisque est. Velit est euismod eget proin facilisis. Eu tempor viverra et pharetra commodo. Vivamus orci morbi lectus maecenas massa.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur. Volutpat sodales ultricies hendrerit scelerisque est. Velit est euismod eget proin facilisis</p>
                             </div>
                         </div>
                     </div>

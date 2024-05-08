@@ -4,6 +4,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.header-motto {
+    margin-bottom: 0;
+    font-size: 1em;
+    opacity: 40%;
+    text-align: left;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+
+}
+
 .section1 {
     min-height: 100vh;
     display: flex;
@@ -73,6 +83,7 @@ body {
                     border-radius: 0 0 40px 40px;
                     text-align: center;
                     background-color: #BFDDC1;
+                    margin-bottom: -10px;
 
                     h2 {
                         margin-top: 20px;
@@ -117,6 +128,8 @@ body {
                     border-radius: 0 0 40px 40px;
                     text-align: center;
                     background-color: #BFDDC1;
+                    margin-bottom: -10px;
+
 
                     h2 {
                         margin-top: 20px;
@@ -162,6 +175,8 @@ body {
                     border-radius: 0 0 40px 40px;
                     text-align: center;
                     background-color: #BFDDC1;
+                    margin-bottom: -10px;
+
 
                     h2 {
                         margin-top: 20px;

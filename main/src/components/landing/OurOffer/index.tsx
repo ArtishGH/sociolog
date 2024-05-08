@@ -1,4 +1,5 @@
 import "./style.scss";
+
 const OurOffer = () => {
   return (
     <div className="offer">
@@ -48,7 +49,7 @@ const OurOffer = () => {
         alt="dziwka"
       />
       <div className="space">
-        <button>See more</button>
+      <button onClick={() => (window.location.href = "/statistics")}>See More</button>
       </div>
       <hr></hr>
     </div>

@@ -40,12 +40,27 @@ body {
   display: flex;
   text-align: center;
   width: 100%;
+  margin-left: -25px;
+  justify-content: center;
+  margin-top: 7px;
 }
 
 .app nav ul li:first-child {
   text-decoration: underline;
 }
 .app nav ul li:hover {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  opacity: 100%;
+  color: #206975;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic;
+  list-style: none;
+  color: #206975;
 }
 
 .app nav li {

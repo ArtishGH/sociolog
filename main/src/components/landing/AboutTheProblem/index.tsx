@@ -14,12 +14,9 @@ const About = () => {
               src="../../../../public/img/zdjecie3.png"
             />
             <div className="info">
-              <h4>Lorem ipsum</h4>
+              <h4>Depression</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Volutpat sodales
-                ultricies hendrerit scelerisque est. Velit est euismod eget
-                proin facilisis. Eu tempor viverra et pharetra commodo. Vivamus
-                orci morbi lectus maecenas massa.
+                Depression is a common mental disorder. Globally, more than 264 million people of all ages suffer from depression. Depression is a major contributor to the overall global burden of disease.
               </p>
             </div>
           </div>
@@ -30,8 +27,8 @@ const About = () => {
               src="../../../../../public/img/zdjecie2.png"
             />
             <div className="info">
-              <h4>title</h4>
-              <p>bomba bomba bomba bomab bomab</p>
+              <h4>Autism</h4>
+              <p>Autism spectrum disorder (ASD) is a developmental disability caused by differences in the brain. People with ASD often have problems with social communication and interactio.</p>
             </div>
           </div>
           <div className="description">
@@ -40,8 +37,8 @@ const About = () => {
               src="../../../../../public/img/zdjecie1.png"
             />
             <div className="info">
-              <h4>title</h4>
-              <p>bomba bomba bomba bomab bomab</p>
+              <h4>Asperger</h4>
+              <p>Asperger syndrome is often considered a high functioning form of autism. It can lead to difficulty interacting socially, repeat behaviors, and clumsiness. </p>
             </div>
           </div>
         </div>
