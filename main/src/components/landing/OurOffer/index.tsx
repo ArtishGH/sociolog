@@ -42,6 +42,10 @@ const OurOffer = () => {
           dealing with etc.
         </p>
       </div>
+      <div className="space">
+        <button>See more</button>
+      </div>
+      <hr></hr>
     </div>
   );
 };

@@ -1,9 +1,10 @@
 import About from "../AboutTheProblem";
 import Footer from "../Footer";
-import OurOffer from "../OurOffer";
+import ParentsCommunity from "../ParentsCommunity";
+
 import "./style.scss";
 
-export const LandingView = () => {
+export const LandingViewParents = () => {
   return (
     <div className="view">
       <div className="container">
@@ -16,7 +17,7 @@ export const LandingView = () => {
         </div>
       </div>
       <About />
-      <OurOffer />
+      <ParentsCommunity />
       <Footer />
     </div>
   );

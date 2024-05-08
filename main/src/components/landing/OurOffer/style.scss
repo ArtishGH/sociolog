@@ -57,3 +57,26 @@ body {
   margin-left: 60%;
   margin-top: -20%;
 }
+.space {
+  margin-top: 100px;
+  button {
+    border: #7ea07b 2px solid;
+    border-radius: 10px;
+    background-color: #3e513d;
+    border: none;
+    padding: 20px;
+    margin-left: 50%;
+    color: white;
+    margin-top: -100px;
+    width: 180px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Poppins";
+    transition: 0.8s;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: white;
+    color: #3e513d;
+  }
+}
