@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
+import { Statistics } from "./pages/Statistics/Statistics.tsx";
 import { LandingPage } from "./pages/Landing/Landing.tsx";
 import { FormPage } from "./pages/Form/Form.tsx";
 import { Chat } from "./pages/Chat/Chat.tsx";
@@ -24,7 +24,7 @@ const App = () => {
                   <Link to="/form">Form</Link>
                 </li>
                 <li>
-                  <Link to="/">Statistics</Link>
+                  <Link to="/statistics">Statistics</Link>
                 </li>
                 <li>
                   <Link to="/parents">Parents</Link>
@@ -37,6 +37,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/form" element={<FormPage />} />
+          <Route path="/statistics" element={<Statistics />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/parents" element={<LandingViewParents />} />
         </Routes>
