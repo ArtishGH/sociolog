@@ -1,3 +1,4 @@
+import "./style.scss";
 const OurOffer = () => {
   return (
     <div className="offer">
