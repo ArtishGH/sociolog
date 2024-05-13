@@ -1,0 +1,76 @@
+.container-chat {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  color: black;
+  background-color: #9cc29b;
+  h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+    color: #364435;
+    font-style: italic;
+    font-weight: 700;
+    border-bottom: #364435 solid 2px;
+    font-size: 2.5rem;
+  }
+  .both-bars {
+    margin-top: -30px;
+    width: 100%;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+
+    .left-bar {
+      margin-left: 5%;
+      margin-top: 40px;
+      h3 {
+        font-size: 1.9rem;
+        font-style: italic;
+        font-weight: 900;
+        color: #506850;
+      }
+      h6 {
+        font-size: 0.7rem;
+        font-style: italic;
+        color: #506850;
+        margin-top: -29px;
+      }
+      .input-button {
+        display: flex;
+        flex-direction: column;
+        width: 200%;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          border: #587158 solid 4px;
+          border-radius: 15px;
+          font-family: "Poppins", bold;
+          margin: 5px;
+          padding: 5px;
+          width: 30%;
+          transition: 0.7s;
+        }
+        button:hover {
+          background-color: #587158;
+          color: white;
+        }
+      }
+    }
+    .right-bar {
+      display: flex;
+      flex-direction: column;
+      margin-left: 15%;
+      .main-image {
+        z-index: 2;
+      }
+      .white-ground-image {
+        margin-top: -120px;
+        z-index: 1;
+      }
+    }
+  }
+}

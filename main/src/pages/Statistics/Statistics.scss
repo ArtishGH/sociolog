@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-motto {
+    margin-bottom: 0;
+    font-size: 1em;
+    opacity: 40%;
+    text-align: left;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.section1 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-image: url('../../../public/img/Header.png');
+
+    .content {
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+
+        .right-bar {
+    
+            img {
+                width: 80%;
+            }
+        }
+    }
+
+}
+
+.section2 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAF6EA;
+
+    .content {
+        width: 80%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EAF6EA;
+
+        .first-item {
+            height: 500px;
+            width: 50%;
+            border-radius: 40px;
+            margin: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #9CC29B;
+
+            .item-content {
+                height: 90%;
+                width: 90%;
+                border-radius: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: white;
+
+                .img {
+                    height: 50%;
+                    width: 100%;
+                    border-radius: 40px 40px 0 0;
+                }
+                
+                .description {
+                    height: 50%;
+                    width: 100%;
+                    border-radius: 0 0 40px 40px;
+                    text-align: center;
+                    background-color: #BFDDC1;
+                    margin-bottom: -10px;
+
+                    h2 {
+                        margin-top: 20px;
+                    }
+
+                    p {
+                        margin: 25px;
+                    }
+                }
+            }
+        }
+
+        .second-item {
+            height: 500px;
+            width: 50%;
+            border-radius: 40px;
+            margin: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #9CC29B;
+
+            .item-content {
+                height: 90%;
+                width: 90%;
+                border-radius: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: white;
+
+                .img {
+                    height: 50%;
+                    width: 100%;
+                    border-radius: 40px 40px 0 0;
+                }
+
+                .description {
+                    height: 50%;
+                    width: 100%;
+                    border-radius: 0 0 40px 40px;
+                    text-align: center;
+                    background-color: #BFDDC1;
+                    margin-bottom: -10px;
+
+
+                    h2 {
+                        margin-top: 20px;
+                    }
+
+                    p {
+                        margin: 25px;
+                    }
+                }
+            }
+
+        }
+
+        .third-item {
+            height: 500px;
+            width: 50%;
+            border-radius: 40px;
+            margin: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #9CC29B;
+
+            .item-content {
+                height: 90%;
+                width: 90%;
+                border-radius: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: white;
+
+                .img {
+                    height: 50%;
+                    width: 100%;
+                    border-radius: 40px 40px 0 0;
+                }
+
+                .description {
+                    height: 50%;
+                    width: 100%;
+                    border-radius: 0 0 40px 40px;
+                    text-align: center;
+                    background-color: #BFDDC1;
+                    margin-bottom: -10px;
+
+
+                    h2 {
+                        margin-top: 20px;
+                    }
+
+                    p {
+                        margin: 25px;
+                    }
+                }
+            }
+
+        }
+    }
+}   

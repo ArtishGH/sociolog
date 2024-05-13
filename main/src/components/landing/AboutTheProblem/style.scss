@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.about {
+  margin-top: 24%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  .title {
+    h1 {
+      border-bottom: #3e513d 3px solid;
+      width: 30%;
+      position: relative;
+      font-style: italic;
+      font-weight: bolder;
+      font-size: 2.4rem;
+      margin-left: 20px;
+      color: #3e513d;
+    }
+  }
+}
+
+.problem {
+  margin-top: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%; /* Ensure the container takes up the full width */
+}
+
+.description {
+  border-radius: 15px;
+  height: 400px;
+  text-align: center;
+  background-color: #9cc29b;
+  flex-basis: calc(30.33% - 20px); /* Adjust width of each container */
+  margin-bottom: 10px; /* Adjust spacing between containers */
+
+  .info {
+    margin-top: -35px;
+    background-color: #bfddc1;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    height: 60%;
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 0 25px;
+    }
+  }
+  h4 {
+    font-style: italic;
+    margin-top: 10px;
+  }
+  img {
+    margin-top: 15px;
+  }
+}
+.need-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+//adjust image properties (img-first is actually the last one etc.)
+.img-first {
+  max-width: 150px;
+  max-height: 150px;
+}
+.img-second {
+  max-width: 150px;
+  max-height: 150px;
+}
+.img-third {
+  max-width: 150px;
+  max-height: 150px;
+}
+.arrow {
+  position: absolute;
+}

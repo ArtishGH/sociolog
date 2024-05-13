@@ -1,0 +1,129 @@
+.chat {
+  margin-top: -45px;
+  font-family: sans-serif;
+  background: #80a27f;
+  width: 100vw;
+  height: 200vh;
+
+  h1 {
+    padding-top: 150px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+    color: #eaf6ea;
+    padding-bottom: 20px;
+  }
+
+  &-container {
+    width: 95%;
+    max-width: 800px;
+    height: 70%;
+    background: #eaf6ea;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 25px;
+    gap: 15px;
+
+    form {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      input {
+        background: transparent;
+        border: none;
+        padding: 5px;
+        border-bottom: 2px solid #6b886a;
+        font-size: 16px;
+        outline: none;
+        padding-bottom: 6px;
+      }
+
+      button {
+        width: 100%;
+        max-width: 100px;
+        padding: 10px;
+        margin-left: auto;
+        background: #80a27f;
+        border: 1px solid #80a27f;
+        border-radius: 8px;
+        cursor: pointer;
+        color: #eaf6ea;
+        transition: 0.2s;
+        font-size: 14px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          margin-bottom: -2px;
+        }
+
+        &:hover {
+          background: #eaf6ea;
+          color: #6b886a;
+        }
+      }
+    }
+
+    .posts {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-y: auto;
+
+      .post {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        padding: 5px 25px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+          background: #f5f5f5;
+        }
+
+        p {
+          margin: 3px 0;
+          font-size: 15px;
+          line-height: 20px;
+          line-clamp: 1;
+          -webkit-line-clamp: 1;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+
+        &-footer {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 13px;
+
+          .dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #6b886a;
+          }
+
+          span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: rgb(179, 179, 179);
+          }
+        }
+      }
+    }
+  }
+}

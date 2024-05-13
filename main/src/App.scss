@@ -1,0 +1,82 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.smaller-app {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  border: solid 3px #344233;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: rgba(238, 220, 190, 0.3);
+  border-radius: 15px;
+  opacity: 25%;
+  height: 60px;
+  position: fixed; /* Fix the navbar to the top of the viewport */
+  width: 50%; /* Make the navbar span the entire width of the viewport */
+  z-index: 1000; /* Ensure the navbar is stacked above other content */
+}
+
+.app nav {
+  border-radius: 0;
+  opacity: 80%;
+  display: flex;
+  align-items: center;
+}
+
+/* Additional styles as before */
+
+.app nav ul {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  margin-left: -25px;
+  justify-content: center;
+  margin-top: 7px;
+}
+
+.app nav ul li:first-child {
+  text-decoration: underline;
+}
+.app nav ul li:hover {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  opacity: 100%;
+  color: #206975;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic;
+  list-style: none;
+  color: #206975;
+}
+
+.app nav li {
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic;
+  list-style: none;
+  color: #206975;
+}
+
+.app nav li a {
+  opacity: 1;
+  color: black;
+  font-family: "Poppins";
+  font-weight: bolder;
+  text-decoration: none;
+}

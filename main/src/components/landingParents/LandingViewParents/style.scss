@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lalezar&family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lalezar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap");
+
+.view {
+  font-family: "Poppins";
+  box-sizing: border-box;
+  background-image: url(../../../../public/img/LandingPageFinal.png);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+}
+
+.left-bar {
+  margin-bottom: 0px;
+  margin-left: 125px;
+}
+
+.header-title {
+  font-size: 4.5em;
+  opacity: 50%;
+  font-weight: 200;
+  margin-top: 0px;
+  margin-bottom: 0;
+  line-height: 1;
+  width: 600px;
+  font-style: italic;
+  text-align: left;
+  font-family: "Lalezar", system-ui;
+}
+.header-motto {
+  margin-bottom: 0;
+  font-size: 1em;
+  opacity: 40%;
+  text-align: left;
+  font-style: italic;
+}
+
+.right-bar {
+  width: 430px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .landing-header {
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .header-content,
+  .header-image {
+    flex: 1;
+  }
+
+  .header-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-bar img {
+    max-width: 500px;
+  }
+}
